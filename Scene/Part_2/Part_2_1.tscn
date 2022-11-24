@@ -1,0 +1,648 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Character_Dialogue/IMG_2399.png" type="Texture" id=1]
+[ext_resource path="res://Picture/EP2/6.png" type="Texture" id=2]
+[ext_resource path="res://Character_Dialogue/Karn.png" type="Texture" id=3]
+[ext_resource path="res://Picture/EP2/3.png" type="Texture" id=4]
+[ext_resource path="res://Picture/EP2/10.png" type="Texture" id=5]
+[ext_resource path="res://Picture/Others/Map Forest.jpeg" type="Texture" id=6]
+[ext_resource path="res://Picture/Others/—Pngtree—hand cartoon illustration for kids_8451343.png" type="Texture" id=7]
+[ext_resource path="res://Font/Itim Regular.otf" type="DynamicFontData" id=8]
+[ext_resource path="res://Sound/Digital Text.wav" type="AudioStream" id=9]
+[ext_resource path="res://Character_Dialogue/IMG_2379.png" type="Texture" id=10]
+[ext_resource path="res://Picture/EP2/5.png" type="Texture" id=11]
+[ext_resource path="res://Picture/EP2/4.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+font_data = ExtResource( 8 )
+
+[sub_resource type="Animation" id=1]
+resource_name = "Part_2_After_Escape"
+length = 66.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/Box/Text:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 3, 5, 7, 9, 14, 16, 18, 20, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52.1, 54.1, 56, 58, 60, 62 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "แฮ่กๆๆๆ ", "แฮ่กๆๆๆ ", "หนีเร็วๆ พวกมันมากันเยอะ", "หนีเร็วๆ พวกมันมากันเยอะ", "เราจะต้องพาทั้งสองกลับมาให้ได้ และแก้ปัญหาโรคนี้ให้ได้", "เราจะต้องพาทั้งสองกลับมาให้ได้ และแก้ปัญหาโรคนี้ให้ได้", "ฝากด้วยนะ พวกเอ็งคือความหวัง", "ฝากด้วยนะ พวกเอ็งคือความหวัง", " ผู้ใหญ่บ้านพวกเราพอจะมีอะไรที่จะเป็นอาวุธได้ไหม?", " ผู้ใหญ่บ้านพวกเราพอจะมีอะไรที่จะเป็นอาวุธได้ไหม?", "ข้าไม่แน่ใจลองไปดูตรงส่วนที่คนไปตัดฝืนดูสิน่าจะพอมีขวานเหลืออยู่นะ", "ข้าไม่แน่ใจลองไปดูตรงส่วนที่คนไปตัดฝืนดูสิน่าจะพอมีขวานเหลืออยู่นะ", "เดี๋ยวเราจะลองไปดู", "เดี๋ยวเราจะลองไปดู", "นั้นไงขวานนึกว่าจะไม่มีแล้วนะเนี่ย", "นั้นไงขวานนึกว่าจะไม่มีแล้วนะเนี่ย", "ขวานนี้ทำไมหนักจัง", "ขวานนี้ทำไมหนักจัง", "นั้นมันคนนี่นาอย่างงี้ต้องเข้าดูดซะหน่อยแล้วคิดว่างั้นไหมยุง2", "นั้นมันคนนี่นาอย่างงี้ต้องเข้าดูดซะหน่อยแล้วคิดว่างั้นไหมยุง2", "เดี๋ยวจะดูดให้แห้งเลย ", "เดี๋ยวจะดูดให้แห้งเลย ", "เห้ย แกหนะพวกข้าหิวน้ำจังขอดูดหน่อยได้ไหม?", "เห้ย แกหนะพวกข้าหิวน้ำจังขอดูดหน่อยได้ไหม?", "ยอมทำตามที่บอกแล้วจะปล่อยกลับไปแบบมีชีวิต", "ยอมทำตามที่บอกแล้วจะปล่อยกลับไปแบบมีชีวิต" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Box_Char/Name:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 3, 7, 18, 28, 32, 36, 48 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ "กาน
+", "เจน
+
+", "หัวหน้าหมู่บ้าน
+
+
+", "เจน
+
+
+", "ผู้ใหญ่บ้าน
+
+", "เจน
+
+
+", "ยุงลาย
+
+
+" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Fade:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2, 3, 10, 11, 13, 14, 21, 22, 26, 27, 64, 66 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/Box/Text:percent_visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 3, 5, 6, 7, 9, 10, 14, 16, 17, 18, 20, 21, 28, 30, 31, 32, 34, 35, 36, 38, 39, 40, 42, 43, 44, 46, 47, 48, 50, 51, 52.1, 54.1, 55.1, 56, 58, 59, 60, 62, 63 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Control/Box/Text:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 3, 6, 7, 10, 14, 17, 18, 21, 28, 31, 32, 35, 36, 39, 40, 43, 44, 47, 48, 51, 52.1, 55.1, 56, 59, 60, 63 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Control/Box_Char:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Control/Box_Char:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Control/Box_Char/Name:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 3, 22, 28 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Control/Box:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprites/Karn:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 2.5, 3, 6, 7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/10/type = "audio"
+tracks/10/path = NodePath("Sound/Text")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"clips": [ {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 9 )
+} ],
+"times": PoolRealArray( 3, 4, 7, 8, 14, 15, 18, 19, 28, 29, 32, 33, 36, 37, 40, 41, 44, 45, 48, 49, 52.1, 53.1, 55.9694, 56.9694, 60, 61 )
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Control/Text_Noti:percent_visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5, 2, 22, 23, 24, 25 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Control/Text_Noti:text")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 22 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "ความเดิมตอนที่แล้ว", "Part 2
+ป้องกัน" ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Sprites/Hand:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 14, 15, 22, 23 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Sprites/Hand2:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 15, 16, 22, 23 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.968627, 0.968627, 0.968627, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Sprites/Hand3:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 18, 19, 22, 23 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.968627, 0.968627, 0.968627, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Sprites/BG_Forest:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 40, 40.9, 42.9, 44 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Sprites/BG_GotAxe:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 43, 44, 47, 47.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Sprites/BG_Village:modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 26, 28, 39.1, 40 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.913725, 0.913725, 0.913725, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.545098, 0.545098, 0.545098, 1 ), Color( 0.545098, 0.545098, 0.545098, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Sprites/MapForest:texture")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 13, 14, 26 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 5 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Sprites/MapForest:visible")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 13 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Sprites/BG_Mosquito:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 48, 50, 54.1, 55.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Sprites/BG_Mosquito_2:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 55.1, 56, 63, 64 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Sprites/Jane:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 6, 7, 10, 11, 27, 28, 31, 32, 36, 37, 47, 48 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Sprites/Img2399:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 31, 32, 35, 36 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/Box_Char:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Text_Noti:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Text_Noti:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Control/Text_Noti:percent_visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[node name="Part_1_After_Escape" type="Node"]
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="BG_Mosquito_2" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 512.711, 242.767 )
+scale = Vector2( 2.84841, 3.13459 )
+texture = ExtResource( 2 )
+
+[node name="BG_Mosquito" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 511.87, 240 )
+scale = Vector2( 2.89766, 3.04294 )
+texture = ExtResource( 11 )
+
+[node name="MapForest" type="Sprite" parent="Sprites"]
+visible = false
+position = Vector2( 512, 244 )
+scale = Vector2( 0.267782, 0.443636 )
+texture = ExtResource( 5 )
+
+[node name="BG_Forest" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 512, 244 )
+scale = Vector2( 2.87293, 3.15 )
+texture = ExtResource( 4 )
+
+[node name="BG_GotAxe" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 512, 248 )
+scale = Vector2( 2.88089, 3.06173 )
+texture = ExtResource( 12 )
+
+[node name="BG_Village" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 512, 244 )
+scale = Vector2( 2.84444, 3.06918 )
+texture = ExtResource( 5 )
+
+[node name="Hand" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 548.106, 289.042 )
+scale = Vector2( 0.16862, 0.16862 )
+texture = ExtResource( 7 )
+
+[node name="Hand2" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 432, 280 )
+rotation = 2.16994
+scale = Vector2( 0.161668, 0.161668 )
+texture = ExtResource( 7 )
+
+[node name="Hand3" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 584, 256 )
+rotation = 3.93387
+scale = Vector2( 0.162069, 0.162069 )
+texture = ExtResource( 7 )
+
+[node name="Img2399" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 910.25, 343.596 )
+scale = Vector2( 0.107014, 0.107014 )
+texture = ExtResource( 1 )
+
+[node name="Jane" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 921.75, 363.419 )
+scale = Vector2( 0.116007, 0.116007 )
+texture = ExtResource( 10 )
+
+[node name="Karn" type="Sprite" parent="Sprites"]
+modulate = Color( 0.952941, 0.952941, 0.952941, 0 )
+position = Vector2( 913.976, 366.06 )
+scale = Vector2( 0.111482, 0.111482 )
+texture = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Box" type="ColorRect" parent="Control"]
+margin_top = 488.0
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.117647, 0.117647, 0.117647, 1 )
+
+[node name="Text" type="Label" parent="Control/Box"]
+visible = false
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 1016.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 3 )
+text = "ยอมทำตามที่บอกแล้วจะปล่อยกลับไปแบบมีชีวิต"
+
+[node name="Box_Char" type="ColorRect" parent="Control"]
+visible = false
+margin_left = 832.0
+margin_top = 464.0
+margin_right = 1000.0
+margin_bottom = 504.0
+color = Color( 0.243137, 0.243137, 0.243137, 1 )
+
+[node name="Name" type="Label" parent="Control/Box_Char"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 160.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 2 )
+text = "ยุงลาย
+
+
+"
+align = 1
+valign = 1
+
+[node name="Fade" type="ColorRect" parent="Control"]
+modulate = Color( 0.995294, 0.995294, 0.995294, 0.900002 )
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 1025.0
+margin_bottom = 601.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Text_Noti" type="Label" parent="Control"]
+margin_left = 320.0
+margin_top = 248.0
+margin_right = 706.0
+margin_bottom = 373.0
+custom_fonts/font = SubResource( 5 )
+text = "Part 2
+ป้องกัน"
+align = 1
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+autoplay = "Part_2_After_Escape"
+anims/Part_2_After_Escape = SubResource( 1 )
+anims/RESET = SubResource( 4 )
+
+[node name="Sound" type="Node" parent="."]
+
+[node name="Text" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 9 )
