@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Font/Itim Regular.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Character_Dialogue/Karn.png" type="Texture" id=2]
@@ -6,10 +6,8 @@
 [ext_resource path="res://Picture/EP7/12.png" type="Texture" id=4]
 [ext_resource path="res://Character_Dialogue/IMG_2379.png" type="Texture" id=5]
 [ext_resource path="res://Picture/EP7/10.png" type="Texture" id=6]
-[ext_resource path="res://Picture/EP7/13.png" type="Texture" id=7]
 [ext_resource path="res://Sound/Digital Text.wav" type="AudioStream" id=8]
 [ext_resource path="res://Picture/EP7/7.png" type="Texture" id=9]
-[ext_resource path="res://Picture/EP7/9.png" type="Texture" id=10]
 [ext_resource path="res://Character_Dialogue/IMG_2421.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=3]
@@ -23,7 +21,7 @@ font_data = ExtResource( 1 )
 
 [sub_resource type="Animation" id=1]
 resource_name = "Part_2_After_Escape"
-length = 36.0
+length = 50.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Control/Box/Text:text")
 tracks/0/interp = 1
@@ -31,11 +29,12 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 3, 7, 11, 15, 19, 23, 27, 31 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ "เป็นยังไงบ้างบาดเจ็บตรงไหนไหม?", "ขอบใจนะ นึกว่าจะไม่รอดซะแล้ว เธอเป็นคนที่วิทยุเข้ามาใช่ไหม?", "ป่าวไม่ใช่ฉันหรอกคนที่วิทยุ อยู่อีกที่", "งั้นมาด้วยกันหน่อยสิพอดีได้รับแจ้งเหตุว่า มีคนป่วยต้องไปรับน่ะเธอพอจะรู้ไหม?", "ฉันนี่แหละค่ะที่เป็นคนโทรไป เดี๋ยวฉันนำทางให้นะคะ
-", "ดีเลยงั้นเรารีบไปกันเถอะ เดี๋ยวต้องไปจอดรถที่จุดฉุกเฉินแล้วต้องไปเดินเท้า ต่อเข้าไปอีก", "มากันแล้วเหรอ งั้นเดี๋ยวให้หมอจอดรถไว้ตรงนี้แหละเดี๋ยวฉันเฝ้ารถเอาไว้ให้", "งั้นเหรอ ขอบใจมากนะ เรารีบไปหาผู้ป่วยกันเถอะก่อนที่จะไปไม่ทัน" ]
+"values": [ "ถึงหมุ่บ้านแล้ว เดี๋ยวหมอเดินตรงไปก็จะเห็นเต้นท์พยาบาลเอง เดี๋ยวฉันตามไปทีหลัง", "โอเค งั้นรีบตามมาละ เดี๋ยวหมอเข้าไปเตรียมขนย้ายผู้ป่วยเอาไว้ก่อนแล้วพอเธอมาจะได้ขนย้ายได้ทันที", "เมื่อกี้มีหมอฉุกเฉินเข้ามารึป่าวคะ?", "อ๋อ เข้ามาสิตอนนี้อยู่ที่เต้นท์พยาบาลน่ะ ลองไปดูสิน่าจะกำลังเตรียมขนย้ายผู้ป่วยอยู่นะ", "ขอบคุณมากค่ะ", "ขอให้โชคดีนะ", "กาน เธอเดินออกมาแบบนี้มันจะดีเหรอ?
+", "ไม่เป็นไรหรอกฉันเดินไหว", "หมอตรวจอาการเขาแล้วละเขาฟื้นตัวได้ดีมากเดินไหวแน่นอน 
+แต่ที่เป็นปัญหาจริงๆก็คือหมอจะพาคนป่วยไปยังไงเพราะว่ายุงมันก็ค่อนข้างเยอะเลยนะ", "ไม่เป็นไรคะหมอเดี๋ยวฉันจะไปเคลียร์เส้นทางเอาไว้แล้วหมอก็ตามมาทีหลังนะคะ", "แบบนั้นก็ดีเหมือนกัน ในเมื่อตกลงกันได้แล้วเรารีบไปกันเถอะ" ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Control/Box_Char/Name:text")
@@ -44,24 +43,41 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 3, 7, 11, 15, 19, 23, 27, 31 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ "เจน
-", "หมอฉุกเฉิน
-", "เจน
-", "หมอฉุกเฉิน
 
 
+", "หมอฉุกเฉิน
 
 ", "เจน
+
+
+
+", "หมอ
+
+
+
+", "เจน
+
+
+
+", "หมอ
+
+
+
+", "เจน
+
+
+", "กาน
+
+
 ", "หมอฉุกเฉิน
 
-
-", "เบล
+", "เจน
 
 ", "หมอฉุกเฉิน
-
 
 
 " ]
@@ -73,7 +89,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 2, 3, 34, 36 ),
+"times": PoolRealArray( 0, 2, 3, 46, 50 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
@@ -85,10 +101,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22, 23, 25, 26, 27, 29, 30, 31, 33, 34 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22, 23, 25, 26, 27, 29, 30, 31, 33, 34, 35, 37, 38, 39, 41, 42, 43, 45, 46 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0 ]
+"values": [ 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0 ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Control/Box/Text:visible")
@@ -97,10 +113,10 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 3, 6, 7, 10, 11, 14, 15, 18, 19, 22, 23, 26, 27, 30, 31, 34 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 3, 6, 7, 10, 11, 14, 15, 18, 19, 22, 23, 26, 27, 30, 31, 34, 35, 38, 39, 42, 43, 46 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false ]
+"values": [ true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Control/Box_Char:visible")
@@ -157,10 +173,10 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 30, 31, 33, 34 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/10/type = "audio"
 tracks/10/path = NodePath("Sound/Text")
@@ -233,8 +249,32 @@ tracks/10/keys = {
 "end_offset": 0.884302,
 "start_offset": 0.0,
 "stream": ExtResource( 8 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+}, {
+"end_offset": 0.884302,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
 } ],
-"times": PoolRealArray( 3, 4, 7, 8, 11, 12, 15, 16, 19, 20, 23, 24, 27, 28, 31, 32 )
+"times": PoolRealArray( 3, 4, 7.1, 8.1, 11, 12, 15, 16, 19, 20, 23, 24, 27, 28, 31, 32, 35, 36, 39, 40, 43, 44 )
 }
 tracks/11/type = "value"
 tracks/11/path = NodePath("Sprites/Jane:modulate")
@@ -243,91 +283,43 @@ tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 0, 3, 4, 6, 7, 11, 12, 14, 15, 19, 20, 22, 23 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 3, 4, 6, 7, 11, 11.9, 14, 15, 19, 19.9, 22, 23, 27, 27.9, 30, 31, 38, 38.9, 41, 42, 46 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
+"values": [ Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 0.952941, 0.952941, 0.952941, 0 ) ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath("Sprites/9:modulate")
+tracks/12/path = NodePath("Sprites/10:modulate")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0, 26, 27, 34, 35 ),
+"times": PoolRealArray( 0, 2, 3, 10, 11 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/13/type = "value"
-tracks/13/path = NodePath("Sprites/10:modulate")
+tracks/13/path = NodePath("Sprites/11:modulate")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 10, 11, 26, 27 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("Sprites/11:modulate")
+tracks/14/path = NodePath("Sprites/12:modulate")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ) ]
-}
-tracks/15/type = "value"
-tracks/15/path = NodePath("Sprites/12:modulate")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ) ]
-}
-tracks/16/type = "value"
-tracks/16/path = NodePath("Sprites/13:modulate")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ) ]
-}
-tracks/17/type = "value"
-tracks/17/path = NodePath("Sprites/7:modulate")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/keys = {
-"times": PoolRealArray( 0, 3, 26, 27 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
-}
-tracks/18/type = "value"
-tracks/18/path = NodePath("Sprites/Img2421:modulate")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/keys = {
-"times": PoolRealArray( 0, 26, 27, 30, 31 ),
+"times": PoolRealArray( 0, 26, 27, 46, 50 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -352,12 +344,6 @@ tracks/0/keys = {
 
 [node name="Sprites" type="Node2D" parent="."]
 
-[node name="13" type="Sprite" parent="Sprites"]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 512, 248 )
-scale = Vector2( 2.84637, 3.05 )
-texture = ExtResource( 7 )
-
 [node name="12" type="Sprite" parent="Sprites"]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 514.5, 244 )
@@ -375,12 +361,6 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 512, 240 )
 scale = Vector2( 2.84444, 3.06918 )
 texture = ExtResource( 6 )
-
-[node name="9" type="Sprite" parent="Sprites"]
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 512, 248 )
-scale = Vector2( 2.84444, 3.06918 )
-texture = ExtResource( 10 )
 
 [node name="7" type="Sprite" parent="Sprites"]
 modulate = Color( 1, 1, 1, 0 )
@@ -423,7 +403,7 @@ margin_top = 8.0
 margin_right = 1016.0
 margin_bottom = 104.0
 custom_fonts/font = SubResource( 3 )
-text = "งั้นเหรอ ขอบใจมากนะ เรารีบไปหาผู้ป่วยกันเถอะก่อนที่จะไปไม่ทัน"
+text = "แบบนั้นก็ดีเหมือนกัน ในเมื่อตกลงกันได้แล้วเรารีบไปกันเถอะ"
 
 [node name="Box_Char" type="ColorRect" parent="Control"]
 visible = false
@@ -440,7 +420,6 @@ margin_right = 160.0
 margin_bottom = 32.0
 custom_fonts/font = SubResource( 2 )
 text = "หมอฉุกเฉิน
-
 
 
 "
